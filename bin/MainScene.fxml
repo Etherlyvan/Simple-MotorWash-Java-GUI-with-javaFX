@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainSceneController">
+   <children>
+      <Button layoutX="13.0" layoutY="134.0" mnemonicParsing="false" onAction="#okButtonClicked" text="Tambah" />
+      <TextField fx:id="fNama" layoutX="13.0" layoutY="22.0" prefHeight="26.0" prefWidth="574.0" promptText="Nama" />
+      <Label layoutX="13.0" layoutY="4.0" prefHeight="18.0" prefWidth="574.0" text="Flashlight" />
+      <TextField fx:id="fTelp" layoutX="13.0" layoutY="56.0" prefHeight="26.0" prefWidth="574.0" promptText="No Telpon" />
+      <Label fx:id="History" layoutX="13.0" layoutY="160.0" text="Histori" />
+      <TextField fx:id="fTipe" layoutX="13.0" layoutY="91.0" prefHeight="26.0" prefWidth="574.0" promptText="Tipe" />
+      <TextField editable="false" layoutX="491.0" layoutY="134.0" prefHeight="26.0" prefWidth="94.0" />
+      <Label layoutX="441.0" layoutY="138.0" text="Tanggal" />
+      <Text fx:id="tDate" layoutX="494.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11 - 18 - 2023" textAlignment="CENTER" wrappingWidth="87.20000000000005" />
+      <Button fx:id="Cari" layoutX="197.0" layoutY="366.0" mnemonicParsing="false" onAction="#CariButtonCLick" prefHeight="26.0" prefWidth="59.0" text="Cari" />
+      <Button fx:id="updateButton" layoutX="516.0" layoutY="366.0" mnemonicParsing="false" onAction="#updateButtonClicked" prefHeight="26.0" prefWidth="71.0" text="Refresh" />
+      <TableView fx:id="datCol" layoutX="14.0" layoutY="178.0" prefHeight="181.0" prefWidth="574.0">
+        <columns>
+          <TableColumn fx:id="idPelCol" prefWidth="114.39999103546143" text="Id Pelanggan" />
+          <TableColumn fx:id="namaCol" prefWidth="99.20001220703125" text="Nama" />
+            <TableColumn fx:id="serviceCol" prefWidth="126.39997863769531" text="Service" />
+            <TableColumn fx:id="hargaCol" prefWidth="119.20001220703125" text="Harga" />
+            <TableColumn fx:id="tanggalCol" prefWidth="120.800048828125" text="Tanggal" />
+        </columns>
+      </TableView>
+      <Button fx:id="hapusButton" layoutX="433.0" layoutY="366.0" mnemonicParsing="false" onAction="#hapusButtonClicked" prefHeight="26.0" prefWidth="71.0" text="Hapus" />
+      <Button fx:id="setButton" layoutX="83.0" layoutY="134.0" mnemonicParsing="false" onAction="#setButtonClicked" prefHeight="26.0" prefWidth="71.0" text="Update" />
+      <TextField fx:id="fSearch" layoutX="14.0" layoutY="366.0" prefHeight="26.0" prefWidth="174.0" promptText="ID/Nama/Tanggal/Service" />
+      <Button fx:id="logoutButt" layoutX="373.0" layoutY="133.0" mnemonicParsing="false" onAction="#LogOutClick" prefHeight="26.0" prefWidth="59.0" text="logout" />
+   </children>
+</AnchorPane>
