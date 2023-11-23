@@ -1,6 +1,8 @@
 ## Getting Started
+Sebuah aplikasi simple untuk menambahkan dan menghapus dan mengupdate data 
+///Note untuk mengupdate data untuk 
+- Refresh 
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
 ## Folder Structure
 
